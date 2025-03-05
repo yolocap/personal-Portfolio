@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERA'S KITCHEN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<style>
+    .floating-card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .floating-card:hover {
+        transform: translateY(-10px);
+    }
+</style>
+<body>
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container ms-4" >
+            <a class="navbar-brand" href="#">
+                <img src="images/vera's kitchen.jpg" alt="Company Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Vera's Kitchen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="#">Today's Offers</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="#">Special Offer</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--carousel-->
+
+    <div id="slide" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
+        </div>
+      
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Super (Banner (Landscape)).jpg" alt="burger 20 percentage off" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Super (Banner (Landscape)) (1).jpg" alt="food menu" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Super (Banner (Landscape)) (2).jpg" alt="tyd special" class="d-block w-100">
+          </div>
+        </div>
+      
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--About us-->
+
+      <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer the best dishes with high-quality ingredients and traditional flavors.</p>
+        </div>
+    </section>
+
+    <!--Menus-->
+
+      <div id="Menu card">
+        <div class="container mt-5">
+            <h2 class="text-center mb-5">Our Menu</h2>
+            <div class="row">
+                <!-- Menu Item 1 grilled chicken-->
+                            <div class="col-md-3 m-3 floating-card">
+                                <div class="card">
+                        <img src="images/grilled chicken.jpg" class="card-img-top" alt="grill">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Chicken</h5>
+                            <p class="card-text">Delicious grilled chicken served with fresh vegetables.</p>
+                            <p class="text-primary fw-bold">Rs.390</p>
+                        </div>
+                    </div>
+            </div>
+                <!-- Menu Item 2 pasta -->
+                <div class="col-md-3 m-3 floating-card">
+                    <div class="card">
+                        <img src="images/pasta.jpg" class="card-img-top" alt="pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta Alfredo</h5>
+                            <p class="card-text">Creamy Alfredo pasta with parmesan and fresh herbs.</p>
+                            <p class="text-primary fw-bold">Rs.199</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 salad-->
+                <div class="col-md-3 m-3 floating-card">
+                    <div class="card">
+                        <img src="images/vegan salad.jpg" class="card-img-top" alt="salad">
+                        <div class="card-body">
+                            <h5 class="card-title">Vegan Salad</h5>
+                            <p class="card-text">Healthy mix of greens, nuts, and fresh veggies.</p>
+                            <p class="text-primary fw-bold">Rs.249</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 pizza-->
+                <div class="col-md-3 m-3 floating-card">
+                    <div class="card">
+                        <img src="images/pizza.jpg" class="card-img-top" alt="pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita Pizza</h5>
+                            <p class="card-text">Classic Margherita pizza with fresh basil, mozzarella, and tomato sauce.</p>
+                            <p class="text-primary fw-bold">Rs.99</p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Menu Item 5 burger -->
+                 <div class="col-md-3 m-3 floating-card">
+                    <div class="card">
+                        <img src="images/burger.jpg" class="card-img-top" alt="burger">
+                        <div class="card-body">
+                            <h5 class="card-title">burgers</h5>
+                            <p class="card-text">Savor the flavor of our mouthwatering, handcrafted burger!</p>
+                            <p class="text-primary fw-bold">Rs.99</p>
+                    </div>
+                    </div>
+                       
+                </div>
+                <!-- Menu Item 6 french fries -->
+                <div class="col-md-3 m-3 floating-card">
+                    <div class="card">
+                        <img src="images/fries.jpg" class="card-img-top" alt="french fries">
+                        <div class="card-body">
+                            <h5 class="card-title">French Fries</h5>
+                            <p class="card-text">Golden, crispy, and irresistibly delicious!</p>
+                            <p class="text-primary fw-bold">Rs.99</p>
+                    </div>
+                    </div>
+                       
+            </div>
+            <!-- Menu Item 7 shawarma -->
+            <div class="col-md-3 m-3 floating-card">
+                <div class="card">
+                    <img src="images/shawarma.jpg" class="card-img-top" alt="Shawarma">
+                    <div class="card-body">
+                        <h5 class="card-title">Shawarma</h5>
+                        <p class="card-text">A tantalizing blend of spices, slow-roasted to juicy perfection!" Let me know if you need any further changes!</p>
+                        <p class="text-primary fw-bold">Rs.120</p>
+                </div>
+                </div>
+                   
+        </div>
+        <!-- Menu Item 8 Briyani -->
+        <div class="col-md-3 m-3 floating-card">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2019/11/04/12/16/rice-4601049_1280.jpg" class="card-img-top" alt="Briyani">
+                <div class="card-body">
+                    <h5 class="card-title">Briyani</h5>
+                    <p class="card-text">Fragrant, flavorful, and rich in tradition!</p>
+                    <p class="text-primary fw-bold">Rs.130</p>
+            </div>
+            </div>           
+    </div>
+    <!-- Menu Item 9 Milkshakes -->
+    <div class="col-md-3 m-3 floating-card">
+        <div class="card">
+            <img src="images/milkshakes.jpg" class="card-img-top" alt="Milkshakes">
+            <div class="card-body">
+                <h5 class="card-title">Milkshakes</h5>
+                <p class="card-text">Creamy, chilled, and bursting with flavor!</p>
+                <p class="text-primary fw-bold">Rs.90</p>
+        </div>
+        </div>
+           
+</div>
+        </div>
+      </div>
+      <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>
+                <a href="#" class="text-dark"> Email: Veraskitchen@gmail.com | Phone: (0413) 215-4561</a>
+            </p>
+        </div>
+    </section>
+      <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Vera's KITCHEN. All Rights Reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="text-white-50">Facebook</a>, 
+                <a href="#" class="text-white-50">Instagram</a>, 
+                <a href="#" class="text-white-50">Twitter</a>
+            </p>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('popupAd').style.display = 'block';
+        }, 3000);
+    };
+    function closeAd() {
+        document.getElementById('popupAd').style.display = 'none';
+    }
+</script>
+</html>
